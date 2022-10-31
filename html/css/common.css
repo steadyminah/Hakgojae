@@ -1,0 +1,222 @@
+/*common.css*/
+@import url('all.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+
+@font-face{
+    font-family: "Noto Sans KR";
+    font-weight: 100;
+    src: url(../../fonts/NotoSansKR-Thin.otf) format('otf');
+}
+@font-face{
+    font-family:"Noto Sans KR";
+    font-weight: 300;
+    src: url(../../fonts/NotoSansKR-Light.otf) format('otf');
+}
+@font-face{
+    font-family:"Noto Sans KR";
+    font-weight: 700;
+    src: url(../../fonts/NotoSansKR-Medium.otf) format('otf');
+}
+@font-face{
+    font-family:"Noto Sans KR";
+    font-weight: 900;
+    src: url(../../fonts/NotoSansKR-Black.otf) format('otf');
+}
+body{
+    font-family: "Noto Sans KR", "돋움", "Sans-serif";
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+}
+*.clear::after{
+    display: block; content:'';
+    clear:both;
+}
+/*글로벌 헤더*/
+#menuWrap{
+    color: #222;
+}
+#menuWrap>.menu{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding: 10px 0;
+}
+#menuWrap>.menu>menu{
+    font-size: 12px; line-height: 20px; font-weight: 100;
+    float: right;
+}
+#menuWrap>.menu>ul{
+    float: right;
+    margin-right: 10px;
+}
+#menuWrap>.menu>ul>li{
+    font-size: 12px; line-height: 20px; font-weight: 100;
+    float: left;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+#menuWrap>.menu>ul>li:hover{color: #E1e1e1;}
+#menuWrap>.menu>menu:hover{color: #E1e1e1;}
+
+#hdrWrap{
+    color: #222;
+}
+#hdrWrap>.header{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+#hdrWrap>.header>.logo{
+    background-image: url(../img/logo_white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 132px; height: 120px;
+    cursor: pointer;
+    padding: 30px 0;
+    margin: -40px 0;
+    margin-left: 10px;
+}
+#hdrWrap>.header>.logo a{
+    color: inherit;
+    text-decoration: none;
+    text-indent: -9999px;
+    display: block;
+    width: 100%; height: 100%;
+}
+
+#hdrWrap>.header>.gnb{
+    text-align: center;
+    padding: 10px 0;
+}
+#hdrWrap>.header>.gnb>li{
+    font-size: 18px; line-height: 20px; font-weight: 100;
+    margin: 0 30px;
+    display: inline-block;
+    cursor: none;
+}
+#hdrWrap>.header>.gnb>li:hover{
+    color: #e1e1e1;
+}
+#hdrWrap>.header>.icon{
+    display: none;
+}
+#hdrWrap>.header>hr{
+    height: 1px; background-color: #e1e1e1;
+    margin: 0 10px;
+}
+.sideBar{
+    display: none;
+}
+
+/*타이틀*/
+#title{
+    padding-top: 160px;
+    max-width: 1200px;
+    width: 90%; margin: 0 auto;
+}
+#title>.segment{
+    margin: 0 10px;
+}
+#title>.segment>h2{
+    font-size: 30px; font-weight: 700; line-height: 40px; color: #222;
+}
+
+/*글로벌 콘텐츠*/
+div.content{
+    padding-top: 120px;
+}
+
+div.content .header{
+    padding: 0 10px;
+}
+
+span{background-color: #FFF;}
+
+div.content .header h5{
+    font-size: 16px; line-height: 80px; color: #222;
+    text-align: left;
+    position: relative;
+}
+div.content .header h5::after{
+    display: block; content: "";
+    height: 1px; background-color: #e1e1e1;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    z-index: -2;
+}
+div.content .header p{}
+div.content .section{}
+div.content .section h3{
+    font-size: 18px; font-weight: bold; line-height: 40px; color: #222;
+}
+div.content .section h5{}
+div.content .section p{
+    font-size: 14px; line-height: 20px; color: #606060;
+}
+div.content .section menu{}
+div.content .segment{
+}
+div.content .segment p{}
+
+/*배너*/
+div.banner{}
+div.banner .section{}
+
+/*글로벌 푸터*/
+div#ftrWrap{
+    padding-top: 160px;
+}
+div#ftrWrap>.footer{
+    max-width: 1200px;
+    width: 90%; margin: 0 auto;
+    overflow: hidden;
+}
+div#ftrWrap>.footer>hr{
+    height: 1px; background-color: #e1e1e1;
+    margin: 0 10px;
+}
+div#ftrWrap>.footer>.logo{
+    background-image: url(../img/logo_black.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 132px; height: 120px;
+    cursor: pointer;
+    margin-left: 10px; margin-right: 70px;
+    float: left;
+}
+div#ftrWrap>.footer>.logo a{
+    color: inherit;
+    text-decoration: none;
+    text-indent: -9999px;
+    display: block;
+    width: 100%; height: 100%;
+}
+div#ftrWrap>.footer>.segment{
+    overflow: hidden;
+    margin-top: 24px;
+}
+div#ftrWrap>.footer>.segment>.article{
+    width: calc(33.33% - 20px);
+    float: left;
+    margin: 0 10px;
+}
+div#ftrWrap>.footer>.segment>.article>h5{
+    font-size: 14px; font-weight: bold; line-height: 40px; color: #222;
+}
+div#ftrWrap>.footer>.segment>.article>ul{
+    float: left;
+}
+div#ftrWrap>.footer>.segment>.article>.info{
+    margin-left: 20px;
+}
+div#ftrWrap>.footer>.segment>.article>ul>li{
+    font-size: 14px; line-height: 20px; color: #606060;
+}
+div#ftrWrap>.footer>.segment>p{
+    margin-left: 10px;
+    font-size: 14px; color: #606060; line-height: 80px;
+}

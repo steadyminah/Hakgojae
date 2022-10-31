@@ -1,0 +1,121 @@
+/*sub_3.css*/
+#hdrWrap>.header>.logo{background-image: url(../img/logo_black.png);}
+
+#title{}
+#title>.segment{}
+#title>.segment>h2{}
+#title>.segment>p{
+    margin-top: 30px;
+    text-align: justify; line-height: 30px; font-size: 16px;
+}
+
+#con01{
+    max-width: 1200px; width: 90%; margin: 0 auto;
+}
+#con01>.section>.i1{
+    background-image: url(../img/image.png);
+    background-repeat: no-repeat;
+    height: 480px;
+    margin: 0 10px;
+}
+#con01>.section>.segment{
+    margin-top: 20px;
+    
+}
+#con01>.section>.segment>h4{
+    font-size: 14px; font-weight: 500; color: #222; line-height: 40px;
+    text-align: center;
+}
+#con01>.section>.segment>h5{
+    font-size: 12px; line-height: 20px;
+    text-align: center;
+}
+#con01>.section>.segment>p{
+    margin: 0 10px;
+    margin-top: 30px;
+    text-align: justify; line-height: 30px; font-size: 16px;
+}
+
+#con02{
+    max-width: 1200px; width: 90%; margin: 0 auto;
+}
+#con02>.section{
+    overflow: hidden;
+}
+#con02>.section>.article{
+    width: calc(100% / 3 - 20px);
+    float: left;
+    margin: 0 10px;
+}
+#con02>.section>.article>.image{
+    height: 280px; background-color: #f4f4f4;
+}
+#con02>.section>.article>.i1{background-image: url(../img/sub3_aboutus_01.jpg);}
+#con02>.section>.article>.i2{background-image: url(../img/sub3_aboutus_02.jpg);}
+#con02>.section>.article>.i3{background-image: url(../img/sub3_aboutus_03.jpg);}
+
+#con02>.section>.article>h4{
+    font-size: 14px; font-weight: 500; color: #222; line-height: 80px;
+    text-align: center;
+}
+#con02>.section>p{
+    margin: 0 10px;
+    text-align: justify; line-height: 30px; font-size: 16px;
+}
+
+#enquiry{
+    max-width: 1200px; width: 90%; margin: 0 auto;
+}
+#enquiry>hr{
+    height: 1px; background-color: #e1e1e1;
+    margin: 0 10px;
+}
+#enquiry>.segment{
+    margin: 0 10px;
+    padding-top: 120px;
+}
+#enquiry>.segment>h2{
+    font-size: 30px; font-weight: 700; line-height: 40px; color: #222;
+}
+#enquiry>.section{
+    overflow: hidden;
+}
+#enquiry>.section>.article{
+    margin: 0 10px;
+    overflow: hidden;
+    margin-top: 40px;
+}
+#enquiry>.section>.article>h4{
+    font-size: 14px; font-weight: 400; color: #222; line-height: 40px; text-transform: uppercase;
+    width: calc((100% / 12) * 1 - 20px);
+    float: left;
+}
+#enquiry>.section>.article>input{
+    width: calc((100% / 12) * 11 - 20px);
+    height: 40px;
+    border: 1px solid #ccc;
+    float: right;
+    margin-top: 12px;
+    padding-left: 10px;
+}
+#enquiry>.section>.article>#height{
+    height: 120px;
+}
+#enquiry>.section>.article>p{
+    font-size: 14px; color: #CCC; line-height: 40px;
+    float: left; margin-left: 120px;
+}
+#enquiry>.section>.btn{
+    float: right;
+    margin-right: 10px;
+    margin-top: 40px;
+}
+#enquiry>.section>.btn>button{
+    width: 180px; height: 40px;
+    background-color: #333; color: #fff;
+    border: 0;
+    cursor: pointer;
+}
+#enquiry>.section>.btn>button:hover{
+    background-color: #666;
+}
