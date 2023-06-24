@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!--모바일 디바이스 너비만큼 뷰포트너비를 조정합니다.-->
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/ogimage.jpg">
+    <meta property="og:title" content="Hakgojae">
+    <meta property="og:description" content="ye3116@naver.com">
+    <meta property="og:url" content="yenizzle.dothome.co.kr">
+    
+    <title>Hakgojae</title>
+    <link rel="icon" href="img/pavi.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index_mx1200.css" media="(max-width:1200px)">
+    <link rel="stylesheet" href="css/index_mx900.css" media="(max-width:900px)">
+    <link rel="stylesheet" href="css/index_mx420.css" media="(max-width:420px)">
+    <script>
+        //brow변수라는 저장공간을 생성
+        //brow에 브라우저 정보를 저장
+        var brow = navigator.userAgent;
+        console.log(brow);
+        if(brow.match('ios | Android | Symbian | Apple | Samsung | LG | Blackberry | iPhone | iPad | Gallaxy')){
+            //조건이 true면 실행
+            window.location.href = 'm/m.index.html'
+        }
+    </script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/fixedBar.js"></script>
+</head>
+<body>
+    <!-- <div id="menuWrap">
+        <div class="menu">
+            <ul>
+                <li><a href="">ko</a></li>
+                <li><a href="">en</a></li>
+                <li><a href="">ch</a></li>
+            </ul>
+            <menu>
+                <a href=""><i class="fab fa-instagram"></i></a>
+            </menu>
+        </div>
+    </div>
+    <div id="hdrWrap">
+        <div class="header">
+            <div class="logo"><a href="index.html">학고재</a></div>
+            <ul class="gnb">
+                <li><a href="sub_1.html">exhibitions</a></li>
+                <li><a href="">artists</a></li>
+                <li><a href="">news</a></li>
+                <li><a href="">art fairs</a></li>
+                <li><a href="sub_2.html">catalogues</a></li>
+                <li><a href="sub_3.html">about us</a></li>
+            </ul>
+            <div class="icon"><i class="fas fa-bars"></i></div>
+            <hr>
+        </div>
+    </div> -->
+    <? include 'head.html' ?>
+    <div id="mnWrap">
+        <div class="main">
+            <video src="mov/mainvid.mp4" autoplay loop muted></video>
+            <div class="overlay"></div>
+            <div class="title"></div>
+        </div>
+    </div>
+    <div id="tWrap">
+        <div class="tab">
+            <div class="menu">
+                <h5>search</h5>
+                <input type="search" id="width">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="menu ml20">
+                <h5>subscribe</h5>
+                <input type="email">
+                <button><i class="far fa-envelope"></i></button>
+            </div>
+        </div>
+    </div>
+    <div id="current" class="content">
+        <div class="header">
+            <h5><span>current exhibition</span></h5>
+        </div>
+        <div class="section">
+            <div class="article">
+                <div class="image i1">
+                    <a href="sub_1.html"></a>
+                </div>
+                <div class="segment">
+                    <h3>김호득</h3>
+                    <p>
+                        김호득
+                        <br>2023-07-14 ~ 2023-07-29
+                    </p>
+                </div>
+            </div>
+            <div class="article">
+                <div class="image i2"></div>
+                <div class="segment">
+                    <h3>[학고재 디자인 | 프로젝트 스페이스] 홍성준: 레이어스</h3>
+                    <p>
+                        홍성준
+                        <br>2023-08-14 ~ 2023-08-29
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="past" class="content">
+        <div class="header">
+            <h5><span>past exhibition</span></h5>
+        </div>
+        <div class="section">
+            <div class="article">
+                <div class="image i1"></div>
+                <div class="segment">
+                    <h3>춘추 IV. 황중통리黃中通理: 김종훈 도자</h3>
+                    <p>
+                        김종훈
+                        <br>2022-11-25 ~ 2022-12-27
+                    </p>
+                </div>
+            </div>
+            <div class="article">
+                <div class="image i2"></div>
+                <div class="segment">
+                    <h3>[학고재 디자인 | 프로젝트 스페이스] 임선구</h3>
+                    <p>
+                        임선구
+                        <br>2022-11-05 ~ 2022-11-28
+                    </p>
+                </div>
+            </div>
+            <div class="article">
+                <div class="image i3"></div>
+                <div class="segment">
+                    <h3>[학고재 디자인 | 프로젝트 스페이스] 신하라: 클러스터</h3>
+                    <p>
+                        신하라
+                        <br>2022-08-13 ~ 2022-09-03
+                    </p>
+                </div>
+            </div>
+            <div class="article">
+                <div class="image i4"></div>
+                <div class="segment">
+                    <h3>[학고재 디자인 | 프로젝트 스페이스] 최윤희: 컷팅</h3>
+                    <p>
+                        최윤희
+                        <br>2022-07-08 ~ 2022-07-29
+                    </p>
+                </div>
+            </div>
+            <div class="article">
+                <div class="image i5"></div>
+                <div class="segment">
+                    <h3>그림과 말 2022</h3>
+                    <p>
+                        강요배/노원희/김정헌/안규철/민정기/주재환/손장섭...
+                        <br>2022-07-01 ~ 2022-07-31
+                    </p>
+                </div>
+            </div>
+            <div class="article">
+                <div class="image i6"></div>
+                <div class="segment">
+                    <h3>학고재 소장품</h3>
+                    <p>
+                        강요배/윤석남/김현식/이우성/박광수/김재용/곽인식
+                        <br>2022-06-04 ~ 2022-06-21
+                    </p>
+                </div>
+            </div>
+        </div>
+        <h6>+ more</h6>
+    </div>
+    <div id="info" class="content">
+        <div class="header">
+            <h5><span>opening hours, ticket price</span></h5>
+        </div>
+        <div class="section">
+            <div class="segment">
+                <h3>학고재 (본관, 신관)</h3>
+                <p>
+                    화~일 10:00~18:00
+                    <br>매주 월요일 휴무
+                </p>
+            </div>
+            <div class="segment">
+                <h3>프로젝트 스페이스</h3>
+                <p>
+                    화~일 11:00~18:00
+                    <br>매주 월요일 휴무
+                </p>
+            </div>
+            <div class="segment">
+                <h3>입장료 안내</h3>
+                <p>
+                    학고재의 모든 전시는 무료 관람입니다.
+                    <br>All exhibitions in hakgojae are free of charge.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="location" class="content">
+        <div class="header">
+            <h5><span>location</span></h5>
+        </div>
+        <div class="section">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3161.923071699435!2d126.97811641558881!3d37.58042913108943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2c6a32d1e9f%3A0x74ec1129da6f5626!2z7ISc7Jq47Yq567OE7IucIOyiheuhnOq1rCDsgrzssq3rj5kg7IK87LKt66GcIDUw!5e0!3m2!1sko!2skr!4v1613533610359!5m2!1sko!2skr" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </div>
+    <? include 'tail.html' ?>
+    <!-- <div id="ftrWrap">
+        <div class="footer">
+            <hr>
+            <div class="logo"><a href="index.html">학고재</a></div>
+            <div class="segment">
+                <div class="article">
+                    <h5>학고재 본관</h5>
+                    <ul>
+                        <li>Address</li>
+                        <li>E-mail</li>
+                        <li>TEL</li>
+                    </ul>
+                    <ul class="info">
+                        <li>03053 서울특별시 종로구 삼청로 50</li>
+                        <li>info@hakgojae.com</li>
+                        <li>02) 720 1524-6 FAX02) 720 1527</li>
+                    </ul> 
+                </div>
+                <div class="article">
+                    <h5>학고재 신관</h5>
+                    <ul>
+                        <li>Address</li>
+                        <li>E-mail</li>
+                        <li>TEL</li>
+                    </ul>
+                    <ul class="info">
+                        <li>03053 서울특별시 종로구 삼청로 48-4</li>
+                        <li>info@hakgojae.com</li>
+                        <li>02) 739 4937-8 FAX02) 737 4435</li>
+                    </ul>   
+                </div>
+                <div class="article">
+                    <h5>학고재 디자인 | 프로젝트 스페이스</h5>
+                    <ul>
+                        <li>Address</li>
+                        <li>E-mail</li>
+                        <li>TEL</li>
+                    </ul>
+                    <ul class="info">
+                        <li>03054 서울특별시 종로구 팔판길 22-3</li>
+                        <li>info@hakgojae.com</li>
+                        <li>02) 720 1524-6 FAX02) 720 1527</li>
+                    </ul>    
+                </div>
+                <p>Copyright 2015 Hakgojae. All right reserved</p>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="sideBar">
+        <div class="menu">
+            <ul>
+                <li><a href="">ko</a></li>
+                <li><a href="">en</a></li>
+                <li><a href="">ch</a></li>
+            </ul>
+            <hr>
+            <ul class="gnb">
+                <li><a href="sub_1.html">exhibitions</a></li>
+                <li><a href="">artists</a></li>
+                <li><a href="">news</a></li>
+                <li><a href="">art fairs</a></li>
+                <li><a href="sub_2.html">catalogues</a></li>
+                <li><a href="sub_3.html">about us</a></li>
+            </ul>
+            <hr>
+            <ol>
+                <li>search<i class="fas fa-search"></i></li>
+                <li>subscribe<i class="far fa-envelope"></i></li>
+                <li>instagram<i class="fab fa-instagram"></i></li>
+            </ol>
+        </div>
+</body>
+</html>
