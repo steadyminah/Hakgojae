@@ -1,0 +1,11 @@
+div#ftrWrap>.footer>.segment>.article{
+    display: none;
+}
+#catalogue>.section>.article>.image{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#catalogue>.section>.article>.image:hover{
+    background-size: cover;
+    background-repeat: no-repeat;
+}

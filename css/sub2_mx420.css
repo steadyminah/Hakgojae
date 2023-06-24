@@ -1,0 +1,57 @@
+#hdrWrap>.header{
+    margin-top: 30px;
+}
+#hdrWrap>.header>.logo{
+    width: 25%; height: 25%;
+    background-size: contain; background-repeat: no-repeat;
+}
+#hdrWrap>.header>.icon{
+    font-size: 16px; margin-top: -10px;
+}
+div.sideBar{
+    width: 45%;
+}
+div.sideBar>.menu{
+    margin-top: 0;
+}
+div.sideBar>.menu>ul:first-of-type{
+    margin-top: 0;
+}
+div.sideBar>.menu>hr:nth-of-type(1){
+    margin-top: 30px;
+}
+
+div.content{
+    padding-top: 40px;
+}
+#title>.segment>h2{
+    font-size: 18px;
+}
+#catalogue{
+    padding-top: 20px;
+}
+#catalogue>.section>.article{
+    width: calc(100% - 20px);
+}
+#catalogue>.section>.article>.image{
+    height: 340px;
+}
+#catalogue>.section>.article:nth-of-type(3)~div{
+    margin-top: 0;
+}
+#catalogue>.section>.article:nth-of-type(1)~div{
+    margin-top: 20px;
+}
+
+div#ftrWrap{
+    padding-top: 80px;
+}
+div#ftrWrap>.footer>.logo{
+    width: 80%; height: 90px;
+    background-size: 30%;
+    background-position: left;
+    margin-left: 10px;
+}
+div#ftrWrap>.footer>.segment>p{
+    display: none;
+}
